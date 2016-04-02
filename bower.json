@@ -1,0 +1,19 @@
+{
+  "name": "todoApp",
+  "description": "a Sails application",
+  "main": "app.js",
+  "authors": [
+    "javaruiz"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/js/dependencies",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="jumbotron">
+        <h1 align="center">Todo App</h1>
+        <br>
+        <div id="todo-form" class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-center form-group">
+              <input type="text" class="form-control" ng-model="todo.tarea" placeholder="Ingresa tarea nueva">
+            </div>
+            <div class="col-sm-8 col-sm-offset-2 text-center form-group">
+              <button class="btn btn-default" ng-click="addTodo(todo)">Añadir</button>
+            </div>
+        </div>
+    </div>
+    <div id="todo-list" class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+            <div class="checkbox" ng-repeat="todo in todoList">
+                <label>
+                    <input type="checkbox" ng-click="removeTodo(todo)">
+                    {{ todo.tarea }}
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
